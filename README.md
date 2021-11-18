@@ -44,6 +44,7 @@ Following diagram shows the flow that we will implement for the `User Registrati
 
 ## APIs Specification
 
+`https://www.getpostman.com/collections/1f14b750916ed2fefd28`
 <br>
 
 ## `User Registration`
