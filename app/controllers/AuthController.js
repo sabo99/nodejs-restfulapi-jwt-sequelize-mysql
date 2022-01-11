@@ -58,7 +58,7 @@ signIn = async (req, res) => {
 
 				if (!passwordIsValid)
 					return res
-						.status(200)
+						.status(401)
 						.send({ code: 401, message: 'Invalid Password!' });
 
 				const token = JWT.sign(
