@@ -5,15 +5,11 @@ const db = require('./app/models');
 
 require('dotenv/config');
 
-const corsOptions = {
-	origin: [
-		'http://localhost:8000',
-		'http://localhost:8080',
-		'http://localhost:3000',
-	],
-};
-
-app.use(cors(corsOptions));
+app.use(
+	cors({
+		origin: '*',
+	})
+);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
