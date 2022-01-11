@@ -6,7 +6,11 @@ const db = require('./app/models');
 require('dotenv/config');
 
 const corsOptions = {
-    origin: 'http://localhost:8081',
+	origin: [
+		'http://localhost:8000',
+		'http://localhost:8080',
+		'http://localhost:3000',
+	],
 };
 
 app.use(cors(corsOptions));
@@ -15,9 +19,9 @@ app.use(express.urlencoded({ extended: true }));
 
 /** Import Router --> Here <-- */
 app.get('/', (req, res) => {
-    res.send({
-        message: 'Welcome to NodeJS-Express with MySQL : Sequelize',
-    });
+	res.send({
+		message: 'Welcome to NodeJS-Express with MySQL : Sequelize',
+	});
 });
 
 const usersRoutes = require('./app/routes/UsersRoutes');
@@ -33,11 +37,11 @@ app.listen(3000, () => console.log(`Server is running on port 3000`));
 
 /** Connet To Database */
 db.sequelize
-    // .sync({ force: true }) /** DROP TABLE IF EXISTS */
-    .sync()
-    .then(() => {
-        console.log(`Connected to Database MySQL`);
-    })
-    .catch((err) => {
-        console.log(err);
-    });
+	// .sync({ force: true }) /** DROP TABLE IF EXISTS */
+	.sync()
+	.then(() => {
+		console.log(`Connected to Database MySQL`);
+	})
+	.catch((err) => {
+		console.log(err);
+	});
