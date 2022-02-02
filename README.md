@@ -1,4 +1,46 @@
-# Restful API with MySQL : User Authentication + CRUD & Authentication JWT (Json Web Token)
+<p align="center">
+  <a href="https://nodejs.org/en/">
+    <img src="https://img.icons8.com/color/128/000000/nodejs.png" width="100" />
+  </a>
+</p>
+<h1 align="center">
+  Restful API with MySQL <br> User Authentication + CRUD & Authentication JWT (Json Web Token)
+</h1>
+
+## 🚀 Quick start
+
+1.  **Create a NodeJS app.**
+
+    Use the NodeJS CLI to create a new app, specifying the minimal starter.
+
+    ```shell
+    # create a new NodeJS site using the minimal starter
+    npm init --y
+    ```
+2. **Setting up automatically update server**
+    ```json
+    ...
+    "scripts": {
+        ...
+        "start": "nodemon server.js"
+    },
+    ```
+
+3.  **Start developing.**
+
+    Navigate into your new app directory and start it up.
+
+    ```shell
+    cd [folder_name]
+    npm start
+    ```
+
+4.  **Open the code and start customizing!**
+
+    Your server is now running at http://localhost:3000!
+
+    Edit `/server.js` to see your server update in real-time!
+
 
 ## Technology Used
 
